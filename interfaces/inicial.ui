@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SistemaCarteirinha</class>
+ <widget class="QMainWindow" name="SistemaCarteirinha">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>493</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sistema Gerador de Carteirinhas</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(167, 167, 167);
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>100</y>
+      <width>222</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Bem Vindo ao Sistema Gerador de Carteirinhas</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCadastoInsti">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>181</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cadastrar Instituto</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCadastroAluno">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>181</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cadastrar Aluno</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnListInsti">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>181</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Listar Institutos</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnListAluno">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>180</y>
+      <width>181</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Listar Alunos</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnListCarteirinhas">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>300</y>
+      <width>181</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Listar Carteirinhas Geradas</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnGerarCarteirinha">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>260</y>
+      <width>181</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Gerar Nova Carteirinha</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnConsultarCarteirinha">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>340</y>
+      <width>181</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Consultar Carteirinha Gerada</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cadastrarCurso">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>181</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cadastrar Curso</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnListCursos">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>220</y>
+      <width>181</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Listar Cursos</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
