@@ -12,7 +12,6 @@ from interfaces.geraCarteirinha import *
 from interfaces.listaCarteirinha import *
 from interfaces.consultarCarteirinha import *
 from PyQt5.QtWidgets import *
-from datetime import date
 import sqlite3
 
 
@@ -315,6 +314,8 @@ class GerarCarteirinha(QMainWindow, Ui_geraCarteirinha):
         alunoexiste = cursor.fetchone()
         cursor.execute('SELECT ALUNO FROM CARTEIRINHAS WHERE ALUNO =?', [cpf])
         carteirinhaexiste = cursor.fetchone()
+        cursor.execute('SELECT STATUS FROM ALUNO WHERE CPF =?', [cpf])
+        status = cursor.fetchone()
 
         if alunoexiste == None:
 
@@ -323,6 +324,10 @@ class GerarCarteirinha(QMainWindow, Ui_geraCarteirinha):
         elif carteirinhaexiste != None:
 
             self.labelMensagem.setText('Carteirinha já existe, deseja renovar?')
+
+        elif status[0] == 'GRADUADO':
+
+            self.labelMensagem.setText('Aluno já graduado, não é possível gerar carteirinha!')
 
         else:
             cursor.execute('SELECT A.NOME, C.NOME, A.ANO_INICIO, I.NOME, A.CPF '
